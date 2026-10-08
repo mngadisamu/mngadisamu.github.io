@@ -8,7 +8,10 @@ Portfolio website for Samukelo Mngadi, a Business Analyst who turns business pro
 ## What's inside
 
 - Business analysis experience and case studies
-- AI and data projects, including [OOTD AI](https://github.com/mngadisamu/ootd-ai-chatbot) and the [Sentiment Analysis Tool](https://github.com/mngadisamu/sentiment-analysis-tool)
+- AI and data projects:
+  - [Sentiment Analysis Tool](https://github.com/mngadisamu/sentiment-analysis-tool) ([live app](https://samukelo-sentiment-analysis-tool.streamlit.app/))
+  - [AI Business Analyst Assistant](https://github.com/mngadisamu/ai-business-analyst-assistant)
+  - [OOTD AI](https://github.com/mngadisamu/ootd-ai-chatbot)
 - Skills and contact details
 
 ## Built with

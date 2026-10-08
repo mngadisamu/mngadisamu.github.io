@@ -42,6 +42,8 @@ ul{margin:0;padding-left:20px}
 li{margin-bottom:6px}
 .project{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:26px;margin-bottom:22px}
 .project img{width:100%;border-radius:6px;border:1px solid var(--line);margin:16px 0}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:16px 0}
+.shots img{margin:0}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
 .tags li{background:var(--accent-soft);color:var(--accent);padding:3px 12px;border-radius:99px;font-size:14px;font-weight:700;margin:0}
 .todo{color:var(--muted);font-style:italic}
@@ -103,6 +105,17 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
   </article>
 
   <article class="project">
+    <h3>AI business analyst assistant</h3>
+    <p>BA Assistant Studio is a web app that turns a raw stakeholder requirement into business analysis documentation. Type a requirement such as "Admin users need to reset user passwords securely" and it returns a requirement analysis (needs, ambiguities, assumptions and risks), a user story, Given/When/Then acceptance criteria with positive and negative scenarios, a test-case table, clarification questions for stakeholders, and a quality check with review notes for the analyst. It is driven by a master prompt that sets the assistant's role, its six outputs and its rules, and it has a prompt engineering mode that analyses and improves prompts. Sessions are saved, and any analysis can be exported as Markdown. The analyst stays responsible for reviewing and validating everything it produces.</p>
+    <div class="shots">
+      <img src="docs/screenshots/ba-assistant-output.png" alt="BA Assistant Studio showing a requirement analysis for the requirement 'Admin users need to reset user passwords securely'" loading="lazy">
+      <img src="docs/screenshots/ba-assistant-master-rules.png" alt="The assistant's master rules: six outputs and a prompt engineering mode" loading="lazy">
+    </div>
+    <ul class="tags"><li>Prompt engineering</li><li>React</li><li>TypeScript</li><li>Gemini API</li><li>User stories</li><li>Acceptance criteria</li></ul>
+    <p><a href="https://github.com/mngadisamu/ai-business-analyst-assistant">View the code on GitHub</a> · <a href="https://gemini.google.com/share/adafacb07650?skid=b4665db0-ff25-4abc-80de-cdfa9f6d6e33">Gemini link</a></p>
+  </article>
+
+  <article class="project">
     <h3>OOTD AI: fashion stylist chatbot</h3>
     <p>A chatbot that builds outfits from your own digital wardrobe. It includes a wardrobe manager, an inspiration hub that matches looks against what you own, saved outfits, and wear logs. I defined the features and user flows, then prototyped it with Google AI Studio and Gemini.</p>
     <img src="docs/screenshots/wardrobe.PNG" alt="OOTD AI wardrobe screen showing clothing items in a grid" loading="lazy">
@@ -132,7 +145,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
   <h2>Skills</h2>
   <div class="skills">
     <div><h3>Business analysis</h3><ul><li>Requirements gathering</li><li>User stories and acceptance criteria</li><li>Process and system-flow modelling</li><li>ERDs and data models</li><li>Stakeholder communication</li></ul></div>
-    <div><h3>Building with AI</h3><ul><li>Prompting and iterating with Gemini</li><li>Prototyping in Google AI Studio</li><li>React and TypeScript basics</li><li>Python, pandas and Streamlit for data tools</li><li>Data cleaning and sentiment analysis</li><li>Git and GitHub</li></ul></div>
+    <div><h3>Building with AI</h3><ul><li>Prompt engineering and iterating with Gemini</li><li>Prototyping in Google AI Studio</li><li>React and TypeScript basics</li><li>Python, pandas and Streamlit for data tools</li><li>Data cleaning and sentiment analysis</li><li>Git and GitHub</li></ul></div>
     <div><h3>Delivery and tools</h3><ul><li>Scrum, Kanban, SDLC</li><li>UAT and defect management</li><li>Figma, Visily</li><li>Microsoft Planner</li></ul></div>
   </div>
 </section>
