@@ -95,6 +95,14 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
   <h2>Projects</h2>
 
   <article class="project">
+    <h3>Sentiment analysis tool</h3>
+    <p>A web tool that turns a CSV of customer comments, tweets or reviews into a cleaned dataset, a sentiment dashboard and a downloadable report. It checks and cleans the data and keeps a log of every change, labels each text as positive, neutral or negative, and lets you choose which sections go into the report. Tested on 14,604 airline tweets from Kaggle, it agreed with the dataset's labels 55.0% of the time at first, and 65.9% after I tuned it for complaint language. US Airways had the highest share of negative tweets (60.9%), and customer service was the most common complaint.</p>
+    <img src="docs/screenshots/sentiment-dashboard.png" alt="Sentiment Analysis Tool dashboard showing 14,604 airline tweets: 32.7% positive, 18.3% neutral, 49.0% negative" loading="lazy">
+    <ul class="tags"><li>Python</li><li>pandas</li><li>VADER</li><li>Streamlit</li><li>Data cleaning</li></ul>
+    <p><a href="https://samukelo-sentiment-analysis-tool.streamlit.app/">Try the live app</a> · <a href="https://github.com/mngadisamu/sentiment-analysis-tool">View the code on GitHub</a></p>
+  </article>
+
+  <article class="project">
     <h3>OOTD AI: fashion stylist chatbot</h3>
     <p>A chatbot that builds outfits from your own digital wardrobe. It includes a wardrobe manager, an inspiration hub that matches looks against what you own, saved outfits, and wear logs. I defined the features and user flows, then prototyped it with Google AI Studio and Gemini.</p>
     <img src="docs/screenshots/wardrobe.PNG" alt="OOTD AI wardrobe screen showing clothing items in a grid" loading="lazy">
@@ -124,7 +132,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
   <h2>Skills</h2>
   <div class="skills">
     <div><h3>Business analysis</h3><ul><li>Requirements gathering</li><li>User stories and acceptance criteria</li><li>Process and system-flow modelling</li><li>ERDs and data models</li><li>Stakeholder communication</li></ul></div>
-    <div><h3>Building with AI</h3><ul><li>Prompting and iterating with Gemini</li><li>Prototyping in Google AI Studio</li><li>React and TypeScript basics</li><li>Git and GitHub</li></ul></div>
+    <div><h3>Building with AI</h3><ul><li>Prompting and iterating with Gemini</li><li>Prototyping in Google AI Studio</li><li>React and TypeScript basics</li><li>Python, pandas and Streamlit for data tools</li><li>Data cleaning and sentiment analysis</li><li>Git and GitHub</li></ul></div>
     <div><h3>Delivery and tools</h3><ul><li>Scrum, Kanban, SDLC</li><li>UAT and defect management</li><li>Figma, Visily</li><li>Microsoft Planner</li></ul></div>
   </div>
 </section>
