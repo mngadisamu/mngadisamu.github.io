@@ -9,9 +9,11 @@ Portfolio website for Samukelo Mngadi, a Business Analyst who turns business pro
 
 - Business analysis experience and case studies
 - AI and data projects:
+  - [Tower: airline complaint triage assistant](https://github.com/mngadisamu/airline-complaint-triage) ([live app](https://airline-complaint-triage-h5gvccmt8vbmwyfhmpc2n3.streamlit.app/))
   - [Sentiment Analysis Tool](https://github.com/mngadisamu/sentiment-analysis-tool) ([live app](https://samukelo-sentiment-analysis-tool.streamlit.app/))
   - [AI Business Analyst Assistant](https://github.com/mngadisamu/ai-business-analyst-assistant)
   - [OOTD AI](https://github.com/mngadisamu/ootd-ai-chatbot)
+- Reflections on the AI bootcamp
 - Skills and contact details
 
 ## Built with
