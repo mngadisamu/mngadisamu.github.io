@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Samukelo Mngadi | Business Analyst</title>
-<meta name="description" content="Business Analyst who turns business problems into requirements, and requirements into working products.">
+<meta name="description" content="Business Analyst who turns business problems into requirements, and requirements into working products. Projects include an airline complaint triage assistant, a sentiment analysis tool and an AI business analyst assistant.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -57,7 +57,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
 <body>
 <div class="wrap">
 <nav aria-label="Main">
-  <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+  <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#reflections">Reflections</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
 </nav>
 
 <header class="hero">
@@ -95,6 +95,19 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
 
 <section id="projects">
   <h2>Projects</h2>
+
+  <article class="project" id="tower">
+    <h3>Tower: airline complaint triage assistant</h3>
+    <p>Tower helps an airline answer customer complaints faster without letting AI send anything on its own. It reads each complaint, sorts it by reason and urgency, drafts a reply with Gemini, and a person approves every reply before the customer sees it. Support agents work a queue sorted by urgency and can escalate to a team lead, who can approve a reply or send it back. Customers get a reference number and a status page where they see approved replies and can write back. Several airlines share one app, each with its own staff, links, complaints and activity log, managed by four roles: platform admin, airline admin, team lead and support agent. I designed the requirements, user journeys and rules, then built and tested it end to end.</p>
+    <p>The reason classifier is right 62.7% of the time on airline tweets it had not seen, against 31.7% for always guessing the most common reason, and 79% when it is at least 50% sure. Anything less certain is marked &ldquo;Needs review&rdquo; and the agent must confirm they read it before approving. Responsible AI controls include masking of personal details, rules that stop drafts promising refunds or compensation (a fixed template replaces them), a limit on AI use per airline, and an activity log. It is a prototype: the social feed is a replay of public Kaggle tweets, replies appear on the status page rather than being sent out, and the demo database resets when the app is rebuilt. Live channels such as Facebook, Instagram, X and WhatsApp are documented as later stages in the repository.</p>
+    <div class="shots">
+      <img src="docs/screenshots/tower-agent-draft.png" alt="Tower agent view showing a cancelled-flight complaint with suggested reason, 92% confidence, High urgency, suggested team and a draft reply" loading="lazy">
+      <img src="docs/screenshots/tower-insights.png" alt="Tower team lead insights showing complaints received and replied to over 14 days and how long open complaints have waited" loading="lazy">
+      <img src="docs/screenshots/tower-status.png" alt="Tower customer status page showing the conversation between the customer and the airline" loading="lazy">
+    </div>
+    <ul class="tags"><li>Python</li><li>Streamlit</li><li>scikit-learn</li><li>Gemini API</li><li>SQLite</li><li>Responsible AI</li><li>Role-based access</li><li>Requirements</li></ul>
+    <p><a href="https://airline-complaint-triage-h5gvccmt8vbmwyfhmpc2n3.streamlit.app/">Try the live app</a> · <a href="https://github.com/mngadisamu/airline-complaint-triage">View the code on GitHub</a></p>
+  </article>
 
   <article class="project">
     <h3>Sentiment analysis tool</h3>
@@ -141,11 +154,18 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
   </article>
 </section>
 
+<section id="reflections">
+  <h2>Reflections</h2>
+  <p>Over the AI bootcamp I moved from writing prompts to building working AI tools: a styling chatbot, a business analysis assistant, a sentiment analysis tool and an airline complaint triage assistant.</p>
+  <p>The biggest lesson came from Tower: the AI was the easy part. The hard work was everything around it, including who may see what, what happens when the model is unsure, how a customer follows up, and how one airline's data stays separate from another's. Measuring the classifier honestly (62.7%, against 31.7% for guessing) is what led me to design it to suggest and flag rather than decide, so a person approves every reply.</p>
+  <p>That is also what I take back to business analysis: write the requirements, the edge cases and the limits down before building, and show stakeholders something real early.</p>
+</section>
+
 <section id="skills">
   <h2>Skills</h2>
   <div class="skills">
     <div><h3>Business analysis</h3><ul><li>Requirements gathering</li><li>User stories and acceptance criteria</li><li>Process and system-flow modelling</li><li>ERDs and data models</li><li>Stakeholder communication</li></ul></div>
-    <div><h3>Building with AI</h3><ul><li>Prompt engineering and iterating with Gemini</li><li>Prototyping in Google AI Studio</li><li>React and TypeScript basics</li><li>Python, pandas and Streamlit for data tools</li><li>Data cleaning and sentiment analysis</li><li>Git and GitHub</li></ul></div>
+    <div><h3>Building with AI</h3><ul><li>Prompt engineering and iterating with Gemini</li><li>Prototyping in Google AI Studio</li><li>React and TypeScript basics</li><li>Python, pandas and Streamlit for data tools</li><li>Text classification with scikit-learn</li><li>Responsible AI: human approval, confidence flags, guardrails</li><li>Data cleaning and sentiment analysis</li><li>Git and GitHub</li></ul></div>
     <div><h3>Delivery and tools</h3><ul><li>Scrum, Kanban, SDLC</li><li>UAT and defect management</li><li>Figma, Visily</li><li>Microsoft Planner</li></ul></div>
   </div>
 </section>
