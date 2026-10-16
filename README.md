@@ -2,7 +2,7 @@
 
 Portfolio website for Samukelo Mngadi, a Business Analyst who turns business problems into requirements, and requirements into working products.
 
-**Live site:** [mngadisamu-github-ebg8ypcck-team-ai-1c57.vercel.app](https://mngadisamu-github-ebg8ypcck-team-ai-1c57.vercel.app/)
+**Live site:** [portfolio-team-ai-1c57.vercel.app](https://portfolio-team-ai-1c57.vercel.app/)
 **PDF version:** [Samukelo-Mngadi-Portfolio.pdf](Samukelo-Mngadi-Portfolio.pdf)
 
 ## What's inside
